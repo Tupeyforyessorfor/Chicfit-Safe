@@ -66,7 +66,7 @@
 		<?php 
 
 			$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-			query_posts('category_name=vegetales,frutas,jugos,semillas,legumbres,carbohidratos,snacks,recetas,sano&posts_per_page=7&paged=' . $paged);
+			query_posts('category_name=vegetales,frutas,jugos,legumbres,carbohidratos,snacks,recetas,sano,dulce,salado&posts_per_page=7&paged=' . $paged);
 
 		?>
 

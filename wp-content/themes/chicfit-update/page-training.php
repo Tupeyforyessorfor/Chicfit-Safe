@@ -66,7 +66,7 @@
 		<?php 
 
 			$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-			query_posts('category_name=tonificacion,piernas,brazos,abs,espalda,pushup,squats,gluteos,hombros,musculo,rutina,workout,fuerza,circuito,maquinas,implementos&posts_per_page=7&paged=' . $paged);
+			query_posts('category_name=tonificacion,piernas,brazos,abs,espalda,pushup,squats,gluteos,hombros,musculo,rutina,workout,fuerza,circuito,maquinas,implementos,crossfit&posts_per_page=7&paged=' . $paged);
 
 		?>
 

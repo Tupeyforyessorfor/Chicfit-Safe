@@ -57,7 +57,7 @@
 
 		<div id="reciente" class="item-principal">
 			<div class="bg-color">
-				<h2>Healty</h2>
+				<h2>Healthy</h2>
 				<nav class="tags">
 					<?php html5blank_nav(); ?>
 				</nav>	
@@ -66,7 +66,7 @@
 		<?php 
 
 			$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-			query_posts('category_name=sueno,descanso,nutricion,habitos,dietas,lesiones,imc,confianza&posts_per_page=7&paged=' . $paged);
+			query_posts('category_name=descanso,nutricion,habitos,dietas,confianza,semillas&posts_per_page=7&paged=' . $paged);
 
 		?>
 

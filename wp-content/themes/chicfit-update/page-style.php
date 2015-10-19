@@ -23,7 +23,10 @@
 			</div>
 			<div class="content-art">
 				<a href="<?php the_permalink()?>">
-					<h1><?php the_title(); ?></h1>
+					<h2><?php if (strlen($post->post_title) > 40) {
+								echo substr(the_title($before = '', $after = '', FALSE), 0, 40) . ' ... '; } else {
+								the_title();
+								} ?></h2>
 				</a>
 				<p><?php html5wp_excerpt('html5wp_index'); // Build your custom callback length in functions.php ?></p>
 				<?php the_tags('<ul class="tags"><li>','</li><li>','</li></ul>'); ?>
@@ -54,7 +57,7 @@
 
 		<div id="reciente" class="item-principal">
 			<div class="bg-color">
-				<h2>Style Life</h2>
+				<h2>LifeStyle</h2>
 				<nav class="tags">
 					<?php html5blank_nav(); ?>
 				</nav>	
@@ -63,7 +66,7 @@
 		<?php 
 
 			$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-			query_posts('category_name=look,prendas,esenciales,belleza,musica,tendencias,spotify,videos,accesorios&posts_per_page=7&paged=' . $paged);
+			query_posts('category_name=look,prendas,esenciales,musica,tendencias,spotify,videos,accesorios,sportychic,lanzamiento,nuevo&posts_per_page=7&paged=' . $paged);
 
 		?>
 

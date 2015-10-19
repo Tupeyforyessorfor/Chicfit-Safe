@@ -21,8 +21,8 @@
 			<div class="form-popups"><?php echo do_shortcode('[newsletter_signup_form id=0]' ); ?></div>
 			<div class="texto-popups">
 				<div class="mensaje-popups">
-					<h2>titulo conte</h2>
-					<div class="mensaje-single">content</div>
+					<h2>Suscríbete</h2>
+					<div class="mensaje-single">Entérate de todo sobre consejos, recetas, ejercicios y mucho más ¡Sé parte de Chicfit y motívate con nosotras por la vida sana y el deporte!</div>
 				</div>
 				<div class="social-popups">
 					<ul>

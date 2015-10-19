@@ -66,7 +66,7 @@
 		<?php 
 
 			$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-			query_posts('category_name=running,jogging,pilates,yoga,asanas,calentamiento,elongacion,flexibilidad,danza,rutina,recuperacion,acondicionamiento,trx,referentes,crossfit&posts_per_page=7&paged=' . $paged);
+			query_posts('category_name=jogging,pilates,yoga,asanas,calentamiento,elongacion,flexibilidad,danza,recuperacion,acondicionamiento,trx,referentes&posts_per_page=7&paged=' . $paged);
 
 		?>
 
